@@ -3,9 +3,13 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
 
 .img1 {
-  width: 20%;
+  width: 250px;
 }
 
 .head,
@@ -28,7 +32,8 @@ body {
 button {
   background-color: #3882f6;
   color: white;
-  border-radius: 30%;
+  border-radius: 10%;
+  padding: 10px 30px; /* Here padding used to increse button size insted of width,height */
 }
 button:hover {
   color: #9aeca1;
@@ -52,4 +57,79 @@ button:hover {
   font-size: 35px;
   font-style: italic;
   color: #1f2937;
+}
+
+/* Until above only styling ,now i align using flex */
+
+.head {
+  display: flex;
+  flex-flow: column;
+  gap: 80px;
+  padding: 80px;
+
+  /* justify-content: center;
+  align-items: center; */
+}
+.linkdiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fulltextimgdiv {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+}
+.textdiv {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 450px;
+  gap: 10px;
+}
+
+.H-links {
+  display: flex;
+  gap: 20px;
+}
+.content {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+.conthead {
+  margin: auto;
+  padding: 50px 50px 0 50px;
+}
+.allcontpics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 80px;
+}
+
+/* so for resizing image i have to apply style to img only if div has img and another div img is not resizing */
+
+.allcontpics div img {
+  max-width: 150px;
+  height: 150px;
+}
+
+.allcontpics div {
+  display: flex;
+  flex-flow: column;
+  width: 150px;
+  text-align: center;
+}
+
+a,
+p,
+h6 {
+  margin: 0;
+  padding: 0;
 }
