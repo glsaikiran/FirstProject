@@ -2,6 +2,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
+
+  flex-flow: column wrap;
 }
 a {
   text-decoration: none;
@@ -9,12 +11,13 @@ a {
 }
 
 .img1 {
-  width: 250px;
+  max-width: 250px;
 }
 
 .head,
 .footer {
   background-color: #172937;
+  color: #e5e7eb;
 }
 .text1 {
   font-size: 48px;
@@ -40,10 +43,22 @@ button:hover {
 }
 .signup {
   background-color: #3882f6;
-  margin: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
 }
 .signupbackgound {
   background-color: white;
+}
+
+.signuptext1 {
+  color: white;
+}
+.signuptext2 {
+  color: #e5e7eb;
+}
+
+.signup button {
+  border-color: white;
 }
 .conthead {
   font-size: 38px;
@@ -66,9 +81,6 @@ button:hover {
   flex-flow: column;
   gap: 80px;
   padding: 80px;
-
-  /* justify-content: center;
-  align-items: center; */
 }
 .linkdiv {
   display: flex;
@@ -79,14 +91,13 @@ button:hover {
 .fulltextimgdiv {
   display: flex;
   justify-content: space-between;
-  border-style: solid;
 }
 .textdiv {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: 450px;
+  max-width: 450px;
   gap: 10px;
 }
 
@@ -123,7 +134,7 @@ button:hover {
 .allcontpics div {
   display: flex;
   flex-flow: column;
-  width: 150px;
+  max-width: 150px;
   text-align: center;
 }
 
@@ -132,4 +143,37 @@ p,
 h6 {
   margin: 0;
   padding: 0;
+}
+.quote {
+  display: flex;
+  flex-flow: column;
+  padding: 80px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.quotetxt {
+  max-width: 500px;
+}
+.author {
+  padding-left: 300px;
+}
+
+.signupbackgound {
+  padding: 80px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+}
+.signup {
+  padding: 80px 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
