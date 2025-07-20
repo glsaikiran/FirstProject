@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .img1 {
   width: 20%;
+}
+
+.head,
+.footer {
+  background-color: #172937;
+}
+.text1 {
+  font-size: 48px;
+  color: #f9faf6;
+  font-weight: 900;
+}
+.text2 {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.Logo {
+  font-size: 25px;
+  color: #f9faf8;
+}
+button {
+  background-color: #3882f6;
+  color: white;
+  border-radius: 30%;
+}
+button:hover {
+  color: #9aeca1;
+}
+.signup {
+  background-color: #3882f6;
+  margin: 30px;
+}
+.signupbackgound {
+  background-color: white;
+}
+.conthead {
+  font-size: 38px;
+  font-weight: 900;
+  color: #1f2937;
+}
+.quote {
+  background-color: #e5e7eb;
+}
+.quotetxt {
+  font-size: 35px;
+  font-style: italic;
+  color: #1f2937;
 }
